@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Forty by HTML5 UP
+	Identity by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
@@ -8,83 +8,79 @@
 	<head>
 		<title>Supreme Banana Games</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body>
+	<body class="is-loading">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Supreme Banana</strong> <span>Games</span></a>
-					</header>
-
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Supreme Banana</h1>
-							</header>
-							<div class="content">
-								<p>Cool games for mobile and desktop<br />
-								made with love.</p>
-							</div>
-						</div>
-					</section>
-
 				<!-- Main -->
-					<div id="main">
-						<!-- Two -->
-							<section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>Who we are</h2>
-									</header>
-									<p>Supreme Banana is independent game studio based in Kaliningrad, Russia. We are making games for iOS, Android and PC.</p>
-								</div>
-							</section>
-
-					</div>
-
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">supremebananagames@gmail.com</a>
-									</div>
-								</section>
-							</section>
-						</div>
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="banana avatar" /></span>
+							<h1>Supreme Banana Games</h1>
+						</header>
+						
+						<hr />
+						<h2>Contacts</h2>
+							<p>Say hello: <a href="mailto:supremebananagames@gmail.com">supremebananagames@gmail.com</a></p>
+							<p>Send us a tweet: <a href="https://twitter.com/bogomazon" target="_blank">@bogomazon</a></p>
+						<footer>
+							<!--
+							<ul class="icons">
+								<li><a href="#" class="fa-twitter">Twitter</a></li>
+								<li><a href="#" class="fa-instagram">Instagram</a></li>
+								<li><a href="#" class="fa-facebook">Facebook</a></li>
+							</ul>
+							-->
+						</footer>
 					</section>
+					<br>
+					<section id="main">
+						<header>
+							<span class="cover"><img src="images/sop_cover.png" alt="" /></span>
+							<h1>Sword of Power</h1>
+							<p>Work in progress, beta available</p>
+						</header>
+						<footer>
+							<a href='https://play.google.com/store/apps/details?id=ru.supremebanana.swordofpower&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width="200" src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+						</footer>
+					</section>
+					<br>
+					<section id="main">
+						<header>
+							<span class="cover"><img src="images/ts_cover.png" alt="" /></span>
+							<h1>Tower Stack</h1>
+						</header>
+						<footer>
+							<a href='https://play.google.com/store/apps/details?id=com.supremebanana.towerstack&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width="200" src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+						</footer>
+					</section>
+					<br>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<div class="inner">
-							<ul class="copyright">
-								<li>&copy; Supreme Banana Games</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
+						<ul class="copyright">
+							<li>&copy; Supreme Banana Games</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
 					</footer>
 
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
 
 	</body>
 </html>
